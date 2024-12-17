@@ -1,0 +1,95 @@
+/* Avocado-inspired color palette */
+:root {
+  --avocado-green: #FFE3E3; /* Main green shade */
+  --avocado-light-green: #C9E9D2; /* Light green for accents */
+  --avocado-yellow: #789DBC /* Pale yellow for a soft background */
+  --avocado-dark-brown: #FEF9F2; /* Dark brown for text/buttons */
+}
+
+/* General Styles */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+  background-color: var(--avocado-yellow);
+  color: var(--avocado-dark-brown);
+}
+
+/* Quote Box */
+#quote-box {
+  background-color: var(--avocado-light-green);
+  border: 3px solid var(--avocado-green);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Date and Time */
+#today, #time {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Main Quote Styling */
+#quote {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-style: italic;
+  margin: 20px 0;
+  color: var(--avocado-dark-brown);
+  font-family: 'Garamond', serif;
+}
+
+/* Controls - Buttons */
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  background-color: #FFE3E3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.heart {
+  font-size: 1.2rem;
+  background-color: #FFE3E3;
+  border: 2px solid var(--avocado-dark-brown);
+}
+
+.heart:hover {
+  background-color: var(--avocado-dark-brown);
+  color: var(--avocado-light-green);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #quote-box {
+      width: 95%;
+      padding: 15px;
+  }
+
+  #quote {
+      font-size: 1.8rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
